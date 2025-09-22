@@ -1,0 +1,23 @@
+```yaml
+    version: '3.8'
+    services:
+      web:
+        image: nginx:latest
+        ports:
+          - "8080:80"
+        volumes:
+          - ./src:/usr/share/nginx/html
+        networks:
+          - app-network
+      app:
+        build:
+          context: .
+          dockerfile: Dockerfile
+        ports:
+          - "3000:3000"
+        networks:
+          - app-network
+    networks:
+      app-network:
+        driver: bridge
+    ```

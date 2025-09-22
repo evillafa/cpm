@@ -1,0 +1,7 @@
+output.xml
+node_modules
+devmatch.out
+test-results
+frontend/playwright-report/
+frontend/test-results/
+frontend/test-results
