@@ -1,0 +1,26 @@
+{
+  "name": "buro-credito",
+  "version": "1.0.0",
+  "description": "Buro de Credito microservice for credit rating processing",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "microservice",
+    "credit",
+    "rating",
+    "amqp"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
