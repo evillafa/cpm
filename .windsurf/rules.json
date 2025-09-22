@@ -1,0 +1,13 @@
+{
+  "rules": [
+    {
+      "id": "docker-compose-syntax",
+      "name": "Docker Compose Command Syntax",
+      "description": "Use `docker compose` (without hyphen) instead of `docker-compose` for Docker Compose commands in newer Docker versions.",
+      "pattern": "docker-compose",
+      "message": "Use `docker compose` (without hyphen) instead of `docker-compose`. The hyphenated version is deprecated in newer Docker versions.",
+      "severity": "warning",
+      "filePatterns": ["**/*.{sh,bash,md,txt,yml,yaml}"]
+    }
+  ]
+}
